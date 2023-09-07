@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "prost-cancer-pred-dock"
+version = "0.0.1"
+description = ""
+authors = ["Edwin mwakio, Clabe Wekesa, Patrick Okoth <simiyu86wekesa@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/clabe-wekesa/prost_Cancer_pred_dock"
+repository = "https://github.com/clabe-wekesa/prost_Cancer_pred_dock"
+keywords = ["lipinsky descriptors", "pIC50 prediction", "Molecular docking", "docking visualization", 
+"protein-ligand interaction","machine learning", "Clabe Wekesa"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent"
+]
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
