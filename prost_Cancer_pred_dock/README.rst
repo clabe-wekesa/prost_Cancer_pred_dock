@@ -33,13 +33,72 @@ The package is found on pypi hence can be installed with pip
 Installation
 ~~~~~~~~~~~~
 
-’‘’pip install prost_cancer_pred_dock’’’ #### Dependencies + pymol
-’‘’conda install -c conda-forge pymol-open-source’’’ + rdkit ’‘’pip
-install rdkit-pypi’’’ + pandas ’‘’pip install pandas’’’ + padelpy ’‘’pip
-install padelpy’’’ + joblib ’‘’pip install joblib’’’ + csv ’‘’pip
-install python-csv’’’ + meeko ’‘’pip install meeko’’’ + Autodock Vina
-’‘’conda install -c bioconda autodock-vina’’’ + java ’‘’conda install -c
-cyclus java-jre’’’ + Sckit-learn ’‘’pip install scikit-learn’’’
+.. code:: bash
+
+   pip install prost_cancer_pred_dock
+
+Dependencies
+~~~~~~~~~~~~
+
+-  pymol
+
+.. code:: bash
+
+   conda install -c conda-forge pymol-open-source
+
+-  rdkit
+
+.. code:: bash
+
+   pip install rdkit-pypi
+
+-  pandas
+
+.. code:: bash
+
+   pip install pandas
+
+-  padelpy
+
+.. code:: bash
+
+   pip install padelpy
+
+-  joblib
+
+.. code:: bash
+
+   pip install joblib
+
+-  csv
+
+.. code:: bash
+
+   pip install python-csv
+
+-  meeko
+
+.. code:: bash
+
+   pip install meeko
+
+-  Autodock Vina
+
+.. code:: bash
+
+   conda install -c bioconda autodock-vina
+
+-  java
+
+.. code:: bash
+
+   conda install -c cyclus java-jre
+
+-  Sckit-learn
+
+.. code:: bash
+
+   pip install scikit-learn
 
 Usage
 -----
@@ -47,18 +106,34 @@ Usage
 Computation of Lipinsky descriptors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-’‘’python from prot_cancer_pred_dock import
-calculate_lipinski_descriptors
-calculate_lipinski_descriptors(“Oc1ccc2c(c1)S\ `C@H <c1ccco1>`__\ `C@H <c1ccc(OCCN3CCCCC3)cc1>`__\ O2”)’’’
-#### Prediction pIC50 ’‘’python from prost_cancer_pred_dock import
-predict_pIC50
-predict_pIC50(“Oc1ccc2c(c1)S\ `C@H <c1ccco1>`__\ `C@H <c1ccc(OCCN3CCCCC3)cc1>`__\ O2”)’’’
-#### Docking and visualization ’‘’python from prost_cancer_pred_dock
-import prot_lig_docking
-prot_lig_docking(“Oc1ccc2c(c1)S\ `C@H <c1ccco1>`__\ `C@H <c1ccc(OCCN3CCCCC3)cc1>`__\ O2”)’’’
-#### Visualization of docking results ’‘’python from
-prost_cancer_pred_dock import vizualize_dock_results
-vizualize_dock_results()’’’
+.. code:: python
+
+   from prot_cancer_pred_dock import calculate_lipinski_descriptors
+   calculate_lipinski_descriptors("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
+
+Prediction pIC50
+~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+   from prost_cancer_pred_dock import predict_pIC50
+   predict_pIC50("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
+
+Docking and visualization
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+   from prost_cancer_pred_dock import prot_lig_docking
+   prot_lig_docking("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
+
+Visualization of docking results
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+   from prost_cancer_pred_dock import vizualize_dock_results
+   vizualize_dock_results()
 
 Contribution
 ------------

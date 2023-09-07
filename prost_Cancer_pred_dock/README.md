@@ -14,61 +14,72 @@ This is a simple platform for computing Lipinsky's Rule of five using the rdkit 
 The package is found on pypi hence can be installed with pip
 
 #### Installation
-'''pip install prost_cancer_pred_dock
-'''
+```bash
+pip install prost_cancer_pred_dock
+```
 #### Dependencies
 + pymol
-'''conda install -c conda-forge pymol-open-source
-'''
+```bash
+conda install -c conda-forge pymol-open-source
+```
 + rdkit
-'''pip install rdkit-pypi
-'''
+```bash
+pip install rdkit-pypi
+```
 + pandas
-'''pip install pandas
-'''
+```bash
+pip install pandas
+```
 + padelpy
-'''pip install padelpy
-'''
+```bash
+pip install padelpy
+```
 + joblib
-'''pip install joblib
-'''
+```bash
+pip install joblib
+```
 + csv
-'''pip install python-csv
-'''
+```bash
+pip install python-csv
+```
 + meeko
-'''pip install meeko
-'''
+```bash
+pip install meeko
+```
 + Autodock Vina
-'''conda install -c bioconda autodock-vina
-'''
+```bash
+conda install -c bioconda autodock-vina
+```
 + java
-'''conda install -c cyclus java-jre
-'''
+```bash
+conda install -c cyclus java-jre
+```
 + Sckit-learn
-'''pip install scikit-learn
-'''
+```bash
+pip install scikit-learn
+```
 
 ### Usage
 #### Computation of Lipinsky descriptors
-'''python
+```python
 from prot_cancer_pred_dock import calculate_lipinski_descriptors
 calculate_lipinski_descriptors("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
-'''
+```
 #### Prediction pIC50
-'''python
+```python
 from prost_cancer_pred_dock import predict_pIC50
 predict_pIC50("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
-'''
+```
 #### Docking and visualization
-'''python
+```python
 from prost_cancer_pred_dock import prot_lig_docking
 prot_lig_docking("Oc1ccc2c(c1)S[C@H](c1ccco1)[C@H](c1ccc(OCCN3CCCCC3)cc1)O2")
-'''
+```
 #### Visualization of docking results
-'''python
+```python
 from prost_cancer_pred_dock import vizualize_dock_results
 vizualize_dock_results()
-'''
+```
 
 
 ### Contribution
