@@ -40,65 +40,16 @@ Installation
 Dependencies
 ~~~~~~~~~~~~
 
--  pymol
+-  pymol, rdkit, pandas, padelpy, joblib, csv, meeko, Autodock Vina,
+   java, scipy, numpy, and scikit-learn.
+-  However, most of them can be easily installed with conda and pip.
 
 .. code:: bash
 
    conda install -c conda-forge pymol-open-source
-
--  rdkit
-
-.. code:: bash
-
-   pip install rdkit-pypi
-
--  pandas
-
-.. code:: bash
-
-   pip install pandas
-
--  padelpy
-
-.. code:: bash
-
-   pip install padelpy
-
--  joblib
-
-.. code:: bash
-
-   pip install joblib
-
--  csv
-
-.. code:: bash
-
-   pip install python-csv
-
--  meeko
-
-.. code:: bash
-
-   pip install meeko
-
--  Autodock Vina
-
-.. code:: bash
-
    conda install -c bioconda autodock-vina
-
--  java
-
-.. code:: bash
-
    conda install -c cyclus java-jre
-
--  Sckit-learn
-
-.. code:: bash
-
-   pip install scikit-learn
+   pip install rdkit-pypi pandas padelpy joblib python-csv meeko scikit-learn scipy numpy
 
 Usage
 -----
